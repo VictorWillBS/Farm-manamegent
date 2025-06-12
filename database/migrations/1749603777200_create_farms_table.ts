@@ -1,7 +1,7 @@
 import { BaseSchema } from '@adonisjs/lucid/schema'
 
 export default class extends BaseSchema {
-  protected tableName = 'fields'
+  protected tableName = 'farms'
 
   async up() {
     this.schema.createTable(this.tableName, (table) => {
@@ -11,7 +11,7 @@ export default class extends BaseSchema {
       table.string('state').notNullable()
       table.integer('total_area').notNullable()
       table.integer('cultivable_area').notNullable()
-      table.integer('vegetebal_area').notNullable()
+      table.integer('vegetation_area').notNullable()
 
       table.integer('farmer_id').unsigned().references('farmers.id').notNullable()
 

@@ -7,6 +7,7 @@
 |
 */
 
+const FarmsController = () => import('#controllers/farms_controller')
 import router from '@adonisjs/core/services/router'
 const FarmersConteroller = () => import('#controllers/farmers_controller')
 
@@ -17,3 +18,4 @@ router.get('/', async () => {
 })
 
 router.resource('farmers', FarmersConteroller).apiOnly()
+router.resource('farms', FarmsController).apiOnly()
