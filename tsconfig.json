@@ -3,6 +3,14 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "rootDir": "./",
-    "outDir": "./build"
-  }
+    "outDir": "./build",
+    "types": ["vite/client"]
+  },
+  "include": [
+    "inertia/**/*.ts",
+    "inertia/**/*.d.ts",
+    "inertia/**/*.tsx",
+    "inertia/**/*.vue",
+    "vue-shims.d.ts"
+  ]
 }
