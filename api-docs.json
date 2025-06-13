@@ -1,0 +1,1229 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "My Project",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "Dashboard"
+    },
+    {
+      "name": "Crop"
+    },
+    {
+      "name": "Harvests"
+    },
+    {
+      "name": "Farms"
+    },
+    {
+      "name": "Farmers"
+    }
+  ],
+  "paths": {
+    "/dashboard": {
+      "get": {
+        "summary": "Index",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/crops/2": {
+      "delete": {
+        "summary": "Destroy",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Crop"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/crops/1": {
+      "put": {
+        "summary": "Update",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Crop"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "product": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "product"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "get": {
+        "summary": "Index",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Crop"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/crops/7": {
+      "get": {
+        "summary": "Show",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Crop"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/crops/": {
+      "post": {
+        "summary": "Store",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Crop"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "product": {
+                    "type": "string"
+                  },
+                  "harvests_id": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "product",
+                  "harvests_id"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/farms/2": {
+      "delete": {
+        "summary": "Destroy",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farms"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "get": {
+        "summary": "Show",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farms"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/harvests/1": {
+      "put": {
+        "summary": "Update",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Harvests"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/harvests/7": {
+      "get": {
+        "summary": "Show",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Harvests"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/harvests/": {
+      "get": {
+        "summary": "Index",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Harvests"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "Store",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Harvests"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "product": {
+                    "type": "string"
+                  },
+                  "planted_at": {
+                    "type": "string"
+                  },
+                  "farm_id": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "product",
+                  "planted_at",
+                  "farm_id"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/farms/1": {
+      "put": {
+        "summary": "Update",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farms"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/farms/": {
+      "get": {
+        "summary": "Index",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farms"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "Store",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farms"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "state": {
+                    "type": "string"
+                  },
+                  "total_area": {
+                    "type": "integer"
+                  },
+                  "cultivable_area": {
+                    "type": "integer"
+                  },
+                  "vegetation_area": {
+                    "type": "integer"
+                  },
+                  "farmer_id": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "name",
+                  "city",
+                  "state",
+                  "total_area",
+                  "cultivable_area",
+                  "vegetation_area",
+                  "farmer_id"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/farmers/1": {
+      "get": {
+        "summary": "New Request",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farmers"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "delete": {
+        "summary": "Destroy",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farmers"
+        ],
+        "parameters": [
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "put": {
+        "summary": "Update",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farmers"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/farmers": {
+      "post": {
+        "summary": "Store",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farmers"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "cpf",
+                  "name"
+                ]
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "get": {
+        "summary": "Index",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "Farmers"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "application/json",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "example": "insomnia/10.2.0",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              },
+              "example": ""
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Crops": {
+        "properties": {
+          "id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4294967296
+          },
+          "product": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "harvests_id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4294967296
+          },
+          "created_at": {
+            "description": "",
+            "type": "string"
+          },
+          "updated_at": {
+            "description": "",
+            "type": "string"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "product",
+          "harvests_id"
+        ]
+      },
+      "Farmers": {
+        "properties": {
+          "id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4294967296
+          },
+          "name": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "cpf": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "cnpj": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "created_at": {
+            "description": "",
+            "type": "string"
+          },
+          "updated_at": {
+            "description": "",
+            "type": "string"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "created_at"
+        ]
+      },
+      "Farms": {
+        "properties": {
+          "id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4294967296
+          },
+          "name": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "city": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "state": {
+            "description": "",
+            "type": "string",
+            "maxLength": 255
+          },
+          "total_area": {
+            "description": "",
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "cultivable_area": {
+            "description": "",
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "vegetation_area": {
+            "description": "",
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "farmer_id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4294967296
+          },
+          "created_at": {
+            "description": "",
+            "type": "string"
+          },
+          "updated_at": {
+            "description": "",
+            "type": "string"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "city",
+          "state",
+          "total_area",
+          "cultivable_area",
+          "vegetation_area",
+          "farmer_id"
+        ]
+      },
+      "Harvests": {
+        "properties": {
+          "id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4294967296
+          },
+          "farm_id": {
+            "description": "",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4294967296
+          },
+          "planted_at": {
+            "description": "",
+            "type": "string"
+          },
+          "harvested_at": {
+            "description": "",
+            "type": "string"
+          },
+          "created_at": {
+            "description": "",
+            "type": "string"
+          },
+          "updated_at": {
+            "description": "",
+            "type": "string"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "farm_id",
+          "planted_at"
+        ]
+      }
+    },
+    "securitySchemes": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3333",
+      "description": "Develop Env"
+    }
+  ],
+  "security": []
+}
