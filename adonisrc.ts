@@ -47,7 +47,7 @@ export default defineConfig({
     () => import('@adonisjs/cors/cors_provider'),
     () => import('@adonisjs/lucid/database_provider'),
     () => import('@adonisjs/session/session_provider'),
-    () => import('@adonisjs/auth/auth_provider')
+    () => import('@adonisjs/auth/auth_provider'),
   ],
 
   /*
@@ -84,4 +84,14 @@ export default defineConfig({
     ],
     forceExit: false,
   },
+  metaFiles: [
+    {
+      pattern: 'public/**',
+      reloadServer: false,
+    },
+  ],
+  hooks: {
+    onBuildStarting: [() => import('@adonisjs/vite/build_hook')],
+  },
+  assetsBundler: false,
 })
