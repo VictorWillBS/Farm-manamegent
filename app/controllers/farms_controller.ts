@@ -1,7 +1,6 @@
 import Farm from '#models/farm'
 import { storeFarmValidator, updateFarmValidator } from '#validators/farm'
 import { HttpContext } from '@adonisjs/core/http'
-import db from '@adonisjs/lucid/services/db'
 
 export default class FarmsController {
   async index() {
