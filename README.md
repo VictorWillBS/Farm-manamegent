@@ -3,22 +3,9 @@
 
 Uma API RESTful desenvolvida com **AdonisJS v6** focada em gestão de fazendas. Este projeto segue boas práticas de arquitetura, validação e organização para facilitar manutenção e escalabilidade.
 
-## 📑 Índice
-
-- [📖 Sobre o Projeto](#-sobre-o-projeto)
-- [✨ Funcionalidades](#-funcionalidades)
-- [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [⚙️ Pré-requisitos](#-pré-requisitos)
-- [🚀 Instalação e Execução](#-instalação-e-execução)
-- [🧪 Executando os Testes](#-executando-os-testes)
-- [🔧 Variáveis de Ambiente](#-variáveis-de-ambiente)
-- [📄 Documentação da API](#-documentação-da-api)
-- [🤝 Como Contribuir](#-como-contribuir)
-- [📝 Licença](#-licença)
-
 ## 📖 Sobre o Projeto
 
-Este projeto é uma **API RESTful** criada com [AdonisJS v6](https://adonisjs.com) que oferece um conjunto de funcionalidades para gestão de fazendas. A aplicação possui estrutura modular, utiliza ORM, autenticação JWT e testes automatizados.
+Este projeto é uma **API RESTful** criada com [AdonisJS v6](https://adonisjs.com) que oferece um conjunto de funcionalidades para gestão de fazendas. A aplicação possui estrutura modular, utiliza ORM. O projeto também possui uma estrutura modular e organizada para facilitar manutenção e escalabilidade.
 
 ## ✨ Funcionalidades
 
@@ -101,20 +88,8 @@ node ace test
 
 A documentação OpenAPI/Swagger está disponível em:
 
-👉 [Link para a documentação](#)  
-Ou pode ser gerada automaticamente com ferramentas como:
+👉 [Link para a documentação](https://app.swaggerhub.com/apis-docs/victor-722/Serasa-challenge/1.0.1)  
 
-- [Swagger Editor](https://editor.swagger.io/)
-- [Redoc](https://redocly.github.io/redoc/)
+Ou pode ser acessada no endpoint do próprio servidor:
+[http://localhost:3333/docs](http://localhost:3333/docs)
 
-## 🤝 Como Contribuir
-
-1. Faça um **fork** do projeto
-2. Crie uma **branch** com sua feature ou correção: `git checkout -b feature/minha-feature`
-3. Faça o **commit**: `git commit -m 'feat: minha feature'`
-4. **Push** na branch: `git push origin feature/minha-feature`
-5. Abra um **Pull Request**
-
-## 📝 Licença
-
-Este projeto está licenciado sob a **[MIT License](LICENSE)**.
