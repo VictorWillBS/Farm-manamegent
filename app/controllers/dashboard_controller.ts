@@ -3,7 +3,7 @@ import type { HttpContext } from '@adonisjs/core/http'
 import db from '@adonisjs/lucid/services/db'
 
 export default class DashboardController {
-  async index({}: HttpContext) {
+  async index({ inertia }: HttpContext) {
     const [farms, farmsPerState, productsPerCrop, farmUsage] = await Promise.all([
       Farm.all(),
       this.getFarmsPerState(),
@@ -13,7 +13,7 @@ export default class DashboardController {
 
     const totalArea = farms.reduce((acc, farm) => acc + farm.total_area, 0)
 
-    return {
+    const data = {
       total_farms: farms.length,
       total_area: totalArea,
       analysis: {
@@ -22,6 +22,8 @@ export default class DashboardController {
         farm_usage: farmUsage,
       },
     }
+
+    return inertia.render('dashboard', { data })
   }
 
   private async getFarmsPerState() {
