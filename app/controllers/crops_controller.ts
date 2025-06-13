@@ -4,7 +4,7 @@ import type { HttpContext } from '@adonisjs/core/http'
 
 export default class CropsController {
   async index({}: HttpContext) {
-    const crops = Crop.all()
+    const crops = await Crop.all()
 
     return crops
   }
