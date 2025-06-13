@@ -1,5 +1,5 @@
 
-# 📦 Nome do Projeto
+# 📦 Farm Management
 
 Uma API RESTful desenvolvida com **AdonisJS v6** focada em gestão de fazendas. Este projeto segue boas práticas de arquitetura, validação e organização para facilitar manutenção e escalabilidade.
 
