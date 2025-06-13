@@ -1,4 +1,3 @@
-import farmer from '#models/farmer'
 import Harvest from '#models/harvest'
 import { storeHarvestValidator, updateHarvestValidator } from '#validators/harvest'
 import { HttpContext } from '@adonisjs/core/http'

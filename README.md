@@ -49,8 +49,8 @@ Antes de iniciar, certifique-se de ter:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-cd SEU_REPOSITORIO
+git clone https://github.com/VictorWillBS/Farm-manamegent
+cd Farm-manamegent
 ```
 
 ### 2. Instale as dependências
@@ -81,13 +81,7 @@ node ace generate:key
 node ace migration:run
 ```
 
-### 6. (Opcional) Popule o banco com seeds
-
-```bash
-node ace db:seed
-```
-
-### 7. Inicie o servidor
+### 6. Inicie o servidor
 
 ```bash
 node ace serve --watch
